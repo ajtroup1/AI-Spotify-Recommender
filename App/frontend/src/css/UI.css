@@ -1,0 +1,177 @@
+.main-ui {
+  width: 60%;
+  height: 77.5vh;
+  background-color: rgba(
+    245,
+    245,
+    245,
+    0.6
+  ); /* Light grayish-white color with 80% opacity */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 8%; /* Add a top margin */
+  border-radius: 30px;
+  position: relative;
+  color: black;
+}
+
+.curr-playing {
+  position: absolute;
+  left: 17.5%;
+  font-size: x-large;
+  top: 7%
+}
+
+.ai-select-container {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+}
+
+.album-cover-container {
+  position: absolute;
+  top: 22%;
+  left: 16.5%;
+}
+
+#album-cover {
+  height: 200px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /* Shadow effect */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+#album-cover:hover {
+  transform: scale(1.2); /* Scale up by 5% on hover */
+}
+
+.music-info {
+  position: absolute;
+  top: 67%;
+  left: 7.1%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(
+    245,
+    245,
+    245,
+    0.8
+  ); /* Light grayish-white color with 80% opacity */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding-bottom: 20px;
+  margin-top: -15px;
+  z-index: 9;
+}
+.music-info a {
+  color: black;
+}
+
+.artist-name:hover .info-card {
+  display: block;
+}
+
+.info-card {
+  padding: 20px;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+#artist-img {
+  height: 200px;
+  width: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.popularity {
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.red {
+  background-color: red;
+}
+
+.silver {
+  background-color: silver;
+}
+
+.green {
+  background-color: green;
+}
+
+.gold {
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3,
+    #ff0000
+  );
+  background-size: 800% 800%;
+  animation: rainbow-gradient 20s ease infinite;
+}
+
+@keyframes rainbow-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.skip-btn {
+  position: absolute;
+  top: 34%;
+  left: 43%;
+}
+.rewind-btn {
+  position: absolute;
+  top: 34%;
+  left: 5%;
+}
+.skip-btn,
+.rewind-btn {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.skip-btn,
+.rewind-btn,
+.play-btn,
+.pause-btn {
+  transition: transform 0.3s ease;
+}
+
+.skip-btn:hover,
+.rewind-btn:hover,
+.play-btn:hover,
+.pause-btn:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.4);
+}

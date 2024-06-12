@@ -1,0 +1,23 @@
+.weather-main {
+  position: absolute;
+  background-color: rgba(
+    245,
+    245,
+    245,
+    0.6
+  ); /* Light grayish-white color with 80% opacity */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  width: 25%;
+  height: 200px;
+  top: 21%;
+  left: 53%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-icon {
+  margin-top: 5px;
+}

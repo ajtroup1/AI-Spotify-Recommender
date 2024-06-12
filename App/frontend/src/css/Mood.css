@@ -1,0 +1,46 @@
+.mood-main {
+  width: 25%;
+  height: 275px;
+  position: absolute;
+  top: 55%;
+  right: 22%;
+  background-color: rgba(
+    245,
+    245,
+    245,
+    0.6
+  ); /* Light grayish-white color with 80% opacity */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji-container {
+  padding: 5%;
+  width: 80%;
+  height: 80%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 10px; /* Gap between images */
+  padding-top: 50px;
+}
+
+#mood-logo {
+  height: 65px;
+  width: auto;
+}
+
+.emoji-container svg,
+img {
+  transition: transform 0.3s ease;
+}
+
+.emoji-container svg:hover {
+  transform: scale(1.4);
+  background-color: lightgreen;
+  border-radius: 50%;
+}
